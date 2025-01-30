@@ -14,6 +14,16 @@ The **Floyd-Steinberg dithering algorithm** applies error diffusion using the fo
       X   7/16
   1/16   5/16   3/16
 ```
+
+### Example of Dithering Effect
+**Rounded Image:**  
+![image](https://github.com/user-attachments/assets/605957ca-1d22-4d14-8148-d05e70cfa381)
+
+
+**Dithered Image:**  
+![image](https://github.com/user-attachments/assets/a558e3f1-a67e-45ea-876f-f9ea61ad6a68)
+
+
 ### Steps Involved
 1. **Process Each Pixel**: The algorithm iterates through the image pixel by pixel, processing from left to right and top to bottom.
 2. **Quantization**: The pixel value is rounded to the nearest integer (or thresholded in binary mode).
@@ -44,4 +54,6 @@ This project is licensed under the MIT License. Feel free to use and modify it f
 ## Contributions
 Pull requests are welcome! If you find a bug or have a feature request, feel free to open an issue.
 
+---
 
+Happy coding! 🚀
