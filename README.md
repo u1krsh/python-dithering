@@ -48,12 +48,6 @@ The **Floyd-Steinberg dithering algorithm** applies error diffusion using the fo
 ## Reference
 For a more detailed explanation, refer to the original paper: [Floyd-Steinberg Dithering Algorithm](https://research.cs.wisc.edu/graphics/Courses/559-s2004/docs/floyd-steinberg.pdf).
 
-## License
-This project is licensed under the MIT License. Feel free to use and modify it for your applications!
-
 ## Contributions
 Pull requests are welcome! If you find a bug or have a feature request, feel free to open an issue.
 
----
-
-Happy coding! 🚀
