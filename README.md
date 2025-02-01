@@ -15,14 +15,12 @@ The **Floyd-Steinberg dithering algorithm** applies error diffusion using the fo
   1/16   5/16   3/16
 ```
 
-### Example of Dithering Effect
+### Example of Floyd-Steinberg Dithering Effect
 **Rounded Image:**  
 ![image](https://github.com/user-attachments/assets/605957ca-1d22-4d14-8148-d05e70cfa381)
 
-
 **Dithered Image:**  
 ![image](https://github.com/user-attachments/assets/a558e3f1-a67e-45ea-876f-f9ea61ad6a68)
-
 
 ### Steps Involved
 1. **Process Each Pixel**: The algorithm iterates through the image pixel by pixel, processing from left to right and top to bottom.
@@ -35,10 +33,25 @@ The **Floyd-Steinberg dithering algorithm** applies error diffusion using the fo
    - 1/16 of the error is added to the bottom-left neighbor.
 5. **Repeat Until Completion**: This process continues for all pixels in the image, ensuring that errors are evenly distributed to maintain the visual fidelity of the image.
 
-## Why Use Floyd-Steinberg Dithering?
-- **Enhances Visual Quality**: Creates the illusion of smooth gradients using a limited number of colors.
-- **Efficient for Low-Color Displays**: Helps display images effectively on monochrome or limited-color screens.
-- **Common in Printing Applications**: Used for halftone printing where only black and white dots are available.
+## Bill Atkinson Dithering Algorithm
+Another widely used dithering algorithm is **Bill Atkinson's dithering**, which is known for distributing errors more locally compared to Floyd-Steinberg. This method uses a simpler and more uniform error distribution pattern, making it ideal for images displayed on early Macintosh computers.
+
+### Bill Atkinson Error Distribution Matrix:
+```
+      X   1/8   1/8
+  1/8   1/8   1/8
+      1/8
+```
+### Example of Bill Atkinson Dithering Effect
+**Rounded Image:**  
+![image](https://github.com/user-attachments/assets/605957ca-1d22-4d14-8148-d05e70cfa381)
+
+**Dithered Image:**  
+![image](https://github.com/user-attachments/assets/03be84a7-b79e-48e8-97f0-965a03f5d3b5)
+
+## Why Use Floyd-Steinberg or Bill Atkinson Dithering?
+- **Floyd-Steinberg**: Creates a smoother dithering effect by distributing error further, producing high-quality images with better gradient preservation.
+- **Bill Atkinson**: Distributes error more locally, which can result in a more compact, less grainy appearance.
 
 ## Example Application Areas
 - **Image Compression**: Reducing file sizes while maintaining quality.
