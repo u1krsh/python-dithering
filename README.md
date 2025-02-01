@@ -59,7 +59,7 @@ Another widely used dithering algorithm is **Bill Atkinson's dithering**, which 
 - **Artistic Effects**: Creating stylized, pixelated images with enhanced contrast.
 
 ## Reference
-For a more detailed explanation, refer to the original paper: [Floyd-Steinberg Dithering Algorithm](https://research.cs.wisc.edu/graphics/Courses/559-s2004/docs/floyd-steinberg.pdf).
+For a more detailed explanation, refer to the original paper: [Floyd-Steinberg Dithering Algorithm](https://research.cs.wisc.edu/graphics/Courses/559-s2004/docs/floyd-steinberg.pdf), [Bill Atkinson Dithering Algorithm](https://research.cs.wisc.edu/graphics/Courses/559-s2004/docs/floyd-steinberg.pdf)
 
 ## Contributions
 Pull requests are welcome! If you find a bug or have a feature request, feel free to open an issue.
