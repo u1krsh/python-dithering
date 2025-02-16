@@ -16,7 +16,7 @@ The **Floyd-Steinberg dithering algorithm** applies error diffusion using the fo
 ```
 
 ### Example of Floyd-Steinberg Dithering Effect
-**Rounded Image:**  
+**Original Image:**  
 ![image](https://github.com/user-attachments/assets/605957ca-1d22-4d14-8148-d05e70cfa381)
 
 **Dithered Image:**  
@@ -43,7 +43,7 @@ Another widely used dithering algorithm is **Bill Atkinson's dithering**, which 
       1/8
 ```
 ### Example of Bill Atkinson Dithering Effect
-**Rounded Image:**  
+**Original Image:**  
 ![image](https://github.com/user-attachments/assets/605957ca-1d22-4d14-8148-d05e70cfa381)
 
 **Dithered Image:**  
@@ -58,8 +58,22 @@ Another widely used dithering algorithm is **Bill Atkinson's dithering**, which 
 - **Monochrome Displays**: Converting full-color images to black-and-white while preserving detail.
 - **Artistic Effects**: Creating stylized, pixelated images with enhanced contrast.
 
-## Reference
-For a more detailed explanation, refer to the original paper: [Floyd-Steinberg Dithering Algorithm](https://research.cs.wisc.edu/graphics/Courses/559-s2004/docs/floyd-steinberg.pdf), [Bill Atkinson Dithering Algorithm](https://research.cs.wisc.edu/graphics/Courses/559-s2004/docs/floyd-steinberg.pdf)
+## Support for Color Images
+The Floyd-Steinberg dithering algorithm can also be applied to **color images** by processing each color channel (Red, Green, Blue) separately. This ensures that color variations and gradients are preserved while reducing the color depth. The process follows these steps:
+1. **Convert Image to RGB Format**: Ensure the image is processed in its red, green, and blue channels.
+2. **Apply Floyd-Steinberg Dithering to Each Channel**: Perform error diffusion on the red, green, and blue channels independently.
+3. **Combine the Processed Channels**: Merge the dithered red, green, and blue channels back to form the final color-dithered image.
+
+### Example of Dithering on Color Images
+![image](https://github.com/user-attachments/assets/bfb64355-3f27-4755-b8f6-6ea2feb110cf)
+
+### Zoomed In Colored Images
+![image](https://github.com/user-attachments/assets/16f4554e-8278-4145-ba6e-1f74aa1bdb02)
+
+## References
+For a more detailed explanation, refer to the original papers:  
+- [Floyd-Steinberg Dithering Algorithm](https://research.cs.wisc.edu/graphics/Courses/559-s2004/docs/floyd-steinberg.pdf)  
+- [Bill Atkinson Dithering Algorithm](https://research.cs.wisc.edu/graphics/Courses/559-s2004/docs/floyd-steinberg.pdf)
 
 ## Contributions
 Pull requests are welcome! If you find a bug or have a feature request, feel free to open an issue.
